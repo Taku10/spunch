@@ -1,0 +1,80 @@
+:root{
+
+    /* fonts */
+    ---main_font:"Open Sans", sans-serif;
+    ---header_font: Nunito, sans-serif;
+
+    /* colors */
+    ---main_color:#4d8cf5;
+    ---header_color: #333333;
+    ---sub_header: #5c5c5c;
+
+    /* font-weight */
+    ---seven: 700;
+    ---six: 600;
+    ---four: 400;
+
+}
+
+.home-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../images/main-background.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(80%); */
+}
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width: 100%;
+    margin: auto;
+    color: white;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    
+}
+
+.home-header h1 {
+    font-size: 58px;
+    font-family: var(---header_font);
+    font-weight: var(---four);
+    text-transform: uppercase;
+    width: 70%;
+    text-align: center;
+}
+
+.home-header p{
+    text-align: center;
+    width: 60%;
+    font-family: var(---main_font);
+    font-weight: var(---four);
+    font-size: 18px;
+}
+
+.home-header button{
+    width: 11rem;
+    height: 2.6rem;
+    border: none;
+    background-color: var(---main_color);
+    font-family: var(---main_font);
+    color:white;
+    font-weight: var(---six);
+    font-size:15px;
+    border-radius: .4rem;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.home-header button:hover{
+    background-color: var(---header_color)
+}
+
+.blue{
+    background-color: blue;
+    height: 20rem;
+}

@@ -1,0 +1,68 @@
+:root {
+
+    /* fonts */
+    ---main_font: "Open Sans", sans-serif;
+    ---header_font: "Nunito", sans-serif;
+
+    /* colors */
+    ---main_color: #4d8cf5;
+    ---header_color: #333333;
+    ---sub_header: #5c5c5c;
+
+    /* font-weight */
+    ---seven: 700;
+    ---six: 600;
+    ---four: 400;
+
+}
+
+
+
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index: 8;
+}
+
+.nav-container.active{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: var(---main_font);
+    font-weight: var(---seven);
+    color: white;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+
+.nav-items li {
+    list-style: none;
+    font-size: 15px;
+    font-family: var(---main_font);
+    font-weight: var(---six);
+    color: white;
+    cursor: pointer;
+}
+
+.nav-items li:hover {
+    color: var(---main_color)
+}
+
+.nav-items li:active {
+    color: var(---main_color)
+}
+

@@ -1,0 +1,56 @@
+:root {
+
+    /* fonts */
+    ---main_font: "Open Sans", sans-serif;
+    ---header_font: Nunito, sans-serif;
+
+    /* colors */
+    ---main_color: #4d8cf5;
+    ---header_color: #333333;
+    ---sub_header: #5c5c5c;
+
+    /* font-weight */
+    ---seven: 700;
+    ---six: 600;
+    ---four: 400;
+
+}
+
+.project-container {
+    width: 100%;
+    height: 15rem;
+
+}
+
+.project-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    gap: 2rem;
+}
+
+.project-wrapper p {
+    font-family: var(---main_font);
+    color: var(---sub_header);
+    font-size: var(---four);
+}
+
+.project-wrapper button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size:15px;
+    border: 1px solid var(---main_color);
+    border-radius:.3rem ;
+    background-color: white;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.project-wrapper button:hover{
+    color: white;
+    background-color: var(---main_color);
+}
