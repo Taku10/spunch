@@ -4,6 +4,8 @@ import About from './components/About'
 import Portfolio from './components/Portfolio'
 import ProjectMind from './components/ProjectMind'
 import Testimonials from './components/Testimonials'
+import Services from './components/Services'
+import Team from './components/Team'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Portfolio />
       <ProjectMind />
       <Testimonials />
+      <Services />
+      <Team />
     </div>
   );
 }
