@@ -6,6 +6,8 @@ import ProjectMind from './components/ProjectMind'
 import Testimonials from './components/Testimonials'
 import Services from './components/Services'
 import Team from './components/Team'
+import Blog from './components/Blog'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Testimonials />
       <Services />
       <Team />
+      <Blog />
+      <Contact />
     </div>
   );
 }

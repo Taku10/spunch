@@ -1,0 +1,59 @@
+:root{
+
+    /* fonts */
+    ---main_font:"Open Sans", sans-serif;
+    ---header_font: Nunito, sans-serif;
+
+    /* colors */
+    ---main_color:#4d8cf5;
+    ---header_color: #333333;
+    ---sub_header: #5c5c5c;
+
+    /* font-weight */
+    ---seven: 700;
+    ---six: 600;
+    ---four: 400;
+
+}
+
+
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 55rem;
+    padding: 8rem 0rem;
+    border: 1px solid;
+   
+}
+
+.contact-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-heading {
+    font-size: 28px;
+    font-weight: var(---seven);
+    color: var(---header_color);
+    font-family: var(---header_font);
+
+}
+
+.sub-heading {
+    font-weight: var(---four);
+    font-family: var(---main_font);
+    font-size: 18px;
+    font-family: var(---sub_header);
+    font-style: italic;
+}
+
+.purple-line {
+    width: 5rem;
+    border: 1px solid var(---main_color);
+    z-index:2;
+}
