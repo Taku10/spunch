@@ -63,6 +63,7 @@
     font-weight: var(---six);
     color: white;
     cursor: pointer;
+    transition: .5s ease;
 }
 
 .nav-items li a {
