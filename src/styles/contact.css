@@ -25,8 +25,7 @@
     width: 100%;
     height: 55rem;
     padding: 8rem 0rem;
-    border: 1px solid;
-   
+    gap:2rem;
 }
 
 .contact-heading{
@@ -57,3 +56,54 @@
     border: 1px solid var(---main_color);
     z-index:2;
 }
+
+.contact-form{
+    width:60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.full-name{
+    display: flex;
+    gap:2rem;
+    width: 100%;
+    
+}
+
+.contact-form input{
+    width: 100%;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border: 1px solid var(---sub_header);
+    font-size: 14px;
+    font-family: var(---main_font);
+    font-weight: var(---four);
+    color: var(---header_color);
+    border-color:#c9c7c7
+}
+
+
+.contact-form input:focus{
+    outline-color: var(---main_color);
+}
+
+.contact-form textarea:focus{
+    outline-color: var(---main_color);
+}
+
+.contact-form textarea{
+    padding: .5rem 1rem;
+    border-color:#c9c7c7
+
+}
+
+.full-name input{
+    width: 50%;
+}
+
+
+
+
+
