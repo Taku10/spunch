@@ -6,7 +6,7 @@ import cafe from '../images/article-3.jpg'
 
 const Blog = () => {
     return (
-        <div className='blog-container'>
+        <div className='blog-container' id='blog'>
             <div className='blog-header'>
                 <h1 className='main-heading'>LATEST NEWS</h1>
                 <p className='sub-heading'>Check out our latest news and activities</p>

@@ -4,7 +4,7 @@ import Nav from './Nav'
 
 const Home = () => {
     return (
-        <div className='home-container'>
+        <div className='home-container' id='home'>
             <Nav />
             <header className='home-header'>
                 <h1>Creating Results</h1>

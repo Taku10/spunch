@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Testimonials = () => {
   return (
-    <div className='test-container'>
+    <div className='test-container' id='testimonials'>
       <div className='test-heading'>
         <h1>TESTIMONIALS</h1>
         <hr className='white-line' />

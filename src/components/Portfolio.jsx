@@ -12,7 +12,7 @@ const Portfolio = () => {
 
 
   return (
-    <div className='portfolio-container'>
+    <div className='portfolio-container' id='portfolio'>
       <div className='portfolio-section'>
         <h1 className='main-heading'>Portfolio</h1>
         <p className='sub-heading'>An eye for detail makes our work beautiful</p>

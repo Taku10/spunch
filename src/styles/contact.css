@@ -103,6 +103,23 @@
     width: 50%;
 }
 
+.contact-form button{
+    width: 12rem;
+    align-self: center;
+    height: 3rem;
+    color: white;
+    font-size:15px;
+    font-weight: var(---four);
+    font-family: var(---main_font);
+    background-color: var(---main_color);
+    border-radius: .5rem;
+    border: none;
+}
+
+.contact-form button:hover{
+    background-color: var(---header_color);
+}
+
 
 
 

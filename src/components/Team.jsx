@@ -3,7 +3,7 @@ import React from 'react'
 
 const Team = () => {
     return (
-        <div className='team-container'>
+        <div className='team-container' id='team'>
             <div className="team-header">
                 <h1 className='main-heading-team'>Awesome Team</h1>
                 <p className='sub-heading'>Setibulum rutrum quam vitae fringilla tincidunt</p>

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Services = () => {
     return (
-        <div className='services-container'>
+        <div className='services-container' id='services'>
             <div className="services-heading">
                 <h1 className='main-heading'>SERVICES</h1>
                 <p className='sub-heading'>Scope of our featured premium services</p>
