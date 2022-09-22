@@ -1,10 +1,30 @@
-import React from 'react'
+import React,{useContext, useState} from 'react'
 import { Link } from 'react-scroll'
 import '../styles/nav.css'
+import { CloseContext } from './MobileNav'
+
 
 const NavLinks = () => {
+    const [link, setLink] = useState(false)
+    const open = useContext(CloseContext)
+   
+
+
+  const changeNav = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >= 800) {
+      setLink(true)
+    } else {
+      setLink(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeNav);
+
+
+
     return (
-        <ul className='nav-items'>
+        <ul className={`${link ? 'nav-items fixed' : 'nav-items'} ${link ? 'nav-items active': 'nav-items'}`}>
             <li>
                 <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={1} >
                     HOME

@@ -25,21 +25,16 @@
     justify-content: space-evenly;
     height: 5rem;
     align-items: center;
-    z-index: 10;
     transition: 1s ease-in-out;
-    
+    z-index: 10;
+
 }
 
-.nav-container.fixed{
+.nav-container.fixed {
     position: fixed;
     transition: .5s ease-in-out;
 }
 
-.nav-container.active{
-    background-color: rgba(0, 0, 0, 0.8);
-    transform: translateY(2rem);
-    top:-2rem;
-}
 
 .logo {
     font-size: 2rem;
@@ -78,3 +73,129 @@
     color: var(---main_color)
 }
 
+.hamburger-wrapper,
+.mobile-nav {
+    display: none;
+}
+
+
+@media (max-width:992px) {
+
+    .nav-container {
+        width: 100%;
+        justify-content: space-between;
+       
+    }
+
+    .nav-container.active {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: translateY(2rem);
+        top: -2rem;
+    }
+
+    .logo {
+        margin-left: 10%;
+    }
+
+    .hamburger-wrapper {
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 3%;
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem;
+        display: grid;
+        place-items: center;
+        align-items: center;
+    }
+
+    .nav-container .nav-items.active {
+        
+        transform: translateY(2rem);
+        top: -2rem;
+    }
+    
+
+    .hamburger-wrapper.active {
+        background-color: #333333;
+    }
+
+
+
+    .mobile-nav {
+        display: block;
+
+
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .nav-items {
+        z-index: 10;
+        top: 9.5%;
+        width: 80%;
+        height: 80%;
+        background-color: #333333;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 2rem;
+        margin-right: 10%;
+        animation: navSlide .5s ease-out alternate;
+        animation-fill-mode: both;
+        border: 1px solid;
+
+    }
+
+    .nav-items.active {
+        transform: translateY(0rem);
+        height: 80%;
+    }
+
+
+    .nav-items.fixed {
+
+        position: absolute;
+        top: 5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+
+    }
+
+
+
+    @keyframes navSlide {
+        from {
+            height: 0%;
+            opacity: 0;
+
+        }
+
+        to {
+
+            height: 80%;
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

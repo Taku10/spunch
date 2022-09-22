@@ -23,6 +23,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     /* filter: brightness(80%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .home-header {
@@ -76,7 +79,15 @@
     background-color: var(---header_color)
 }
 
-.blue{
-    background-color: blue;
-    height: 20rem;
+.down-arrow{
+    z-index: 2;
+    color:white;
+    top:0;
+    font-size: 1.8rem;
+    margin-bottom:2rem;
+    cursor: pointer;
+}
+
+.down-arrow:hover{
+    color:var(---main_color);
 }
