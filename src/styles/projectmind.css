@@ -47,10 +47,11 @@
     border-radius:.3rem ;
     background-color: white;
     cursor: pointer;
-    transition: .4s ease-in-out;
+    transition: 1s ease;
 }
 
 .project-wrapper button:hover{
     color: white;
     background-color: var(---main_color);
+    transform: scale(1.1);
 }

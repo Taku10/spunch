@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/nav.css'
 import { Link } from 'react-scroll'
+import DesktopNav from './DesktopNav'
+import MobileNav from './MobileNav'
+
 
 const Nav = () => {
   const [nav, setNav] = useState(false)
@@ -19,47 +22,11 @@ const Nav = () => {
 
 
   return (
-    <nav className={`${nav ? 'nav-container active' : 'nav-container'} ${nav ? 'nav-container fixed' : 'nav-container'}`}>
+    <div className={`${nav ? 'nav-container active' : 'nav-container'} ${nav ? 'nav-container fixed' : 'nav-container'}`}>
       <h1 className='logo'>Spunch</h1>
-      <ul className='nav-items'>
-        <li>
-          <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={1} >
-            HOME
-          </Link>
-        </li>
-        <li>
-          <Link activeClass="active" to="about" spy={true} smooth={true} offset={20} duration={1} delay={100}>
-            ABOUT
-          </Link>
-        </li>
-        <li>
-          <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={20} duration={1} delay={100}>
-            PORTFOLIO
-          </Link>
-        </li>
-        <li>
-          <Link activeClass="active" to="services" spy={true} smooth={true} offset={20} duration={1} delay={100}>
-            SERVICES
-          </Link>
-        </li>
-        <li>
-          <Link activeClass="active" to="team" spy={true} smooth={true} offset={0} duration={1} delay={100}>
-            TEAM
-          </Link>
-        </li>
-        <li>
-          <Link activeClass="active" to="blog" spy={true} smooth={true} offset={-40} duration={1} delay={100}>
-            BLOG
-          </Link>
-        </li>
-        <li>
-          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={30} duration={1} delay={100}>
-            CONTACT
-          </Link>
-        </li>
-       
-      </ul>
-    </nav>
+      <DesktopNav />
+      <MobileNav />
+    </div>
   )
 }
 
