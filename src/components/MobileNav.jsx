@@ -10,7 +10,7 @@ export const CloseContext = createContext()
 const MobileNav = () => {
   const [open, setOpen] = useState(false)
   const hamburger = <CgMenu size='36px' color='white' className='hamburger' onClick={() => setOpen(!open)} />
-
+  const closeBurger = < AiOutlineClose size='36px' color='white' className='hamburger' onClick={() => setOpen(!open)} /> 
 
   const linkClose = () => {
     setOpen(false)
@@ -21,7 +21,7 @@ const MobileNav = () => {
       <nav className='mobile-nav'>
         {open && <NavLinks />}
         <div className={open ? 'hamburger-wrapper active' : 'hamburger-wrapper'}>
-          {hamburger}
+          {!open ? hamburger: closeBurger}
         </div>
 
       </nav>

@@ -24,7 +24,7 @@ const NavLinks = () => {
 
 
     return (
-        <ul className={`${link ? 'nav-items fixed' : 'nav-items'} ${link ? 'nav-items active': 'nav-items'}`}>
+        <ul className={`${link ? 'nav-items fixed' : 'nav-items'} ${link ? 'nav-items active': 'nav-items'} ${open ? 'nav-items active':'nav-items'}`}>
             <li>
                 <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration={1} >
                     HOME
