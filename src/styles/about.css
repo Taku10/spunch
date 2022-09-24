@@ -84,9 +84,10 @@
 }
 
 .about-hero{
-    background-image: url('../images/about-hero.png');
-    background-size: 100%;
+    background-image: url('../images/about-hero.jpg');
+    background-size: cover;
     background-repeat:no-repeat ;
     background-position: center;
+ 
    
 }
