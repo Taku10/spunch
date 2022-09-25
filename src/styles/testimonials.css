@@ -94,6 +94,23 @@
 .carousel-indicators{
     position: absolute;
     top:80%;
+    margin-top:2rem;
     
 }
 
+@media (max-width:992px) {
+    
+    .test-container{
+        height: 45rem;
+    }
+
+
+.test-wrapper{
+    padding: 0rem 10rem
+}
+
+.client-name{
+    margin-top:4rem;
+}
+
+}

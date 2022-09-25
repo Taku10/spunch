@@ -218,3 +218,23 @@
 
 
 }
+
+@media (max-width:500px) {
+
+  .portfolio-container{
+    height: 150rem;
+  }
+
+
+  .port-section-wrapper-1,
+  .port-section-wrapper-2,
+  .port-section-wrapper-3,
+  .port-section-wrapper-4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid;
+    height: 100%;
+  }
+  
+}
