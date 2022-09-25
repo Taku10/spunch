@@ -43,10 +43,10 @@ const Blog = () => {
                 </div>
                 <div className='news news-3'>
                     <img src={cafe} alt={cafe} />
-                    <div className='news-details'>
+                    <div className='article-details'>
                         <h3>Conseqntur distinctio ipsum</h3>
-                        <p className='news-date'>September 20, 2022</p>
-                        <p className='news-text'>
+                        <p className='article-date'>September 20, 2022</p>
+                        <p className='article-text'>
                             Aenean commodo ligula eget dolor sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                         </p>
                         <div className='read-more'>

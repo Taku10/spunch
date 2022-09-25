@@ -121,6 +121,14 @@
 }
 
 
+@media (max-width:768px) {
+    
+    .contact-form{
+        padding: 0rem 2rem;
+        width: 100%;
+    }
+}
+
 
 
 

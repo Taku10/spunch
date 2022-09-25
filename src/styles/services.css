@@ -98,3 +98,27 @@
     font-family: var(---main_font);
     font-weight: var(---four);
 }
+
+@media (max-width:768px) {
+    
+    .services-container{
+        height: 105rem;
+        padding: 4rem 0rem;
+    }
+
+    .serv-row-1, .serv-row-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .serv{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .services-container{
+        height: 115rem;
+    }
+}

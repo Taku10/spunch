@@ -113,4 +113,35 @@
     margin-top:4rem;
 }
 
+
+
+
+
+}
+
+@media (max-width:768px) {
+
+
+    .test-wrapper{
+        padding: 0rem 4rem
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .test-container{
+        height: 50rem;
+    }
+
+
+    .test-wrapper{
+        padding: 0rem 1rem
+    }
+
+    .client-name{
+        margin-top:2rem;
+    }
+    
+
 }
