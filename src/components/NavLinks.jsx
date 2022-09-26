@@ -1,14 +1,20 @@
-import React,{useContext, useState} from 'react'
+import React,{useContext, useState, useEffect} from 'react'
 import { Link } from 'react-scroll'
 import '../styles/nav.css'
 import { CloseContext } from './MobileNav'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 export const DesktopNavLinks = () => {
     const [link, setLink] = useState(false)
     const open = useContext(CloseContext)
    
-
+    useEffect(() => {
+        Aos.init({ duration: 1500, once: false })
+      }, [])
+    
+    
 
   const changeNav = () => {
     console.log(window.scrollY)
@@ -88,37 +94,37 @@ export const MobileNavLinks = ({isMobile, linkClose}) => {
 
     return (
         <ul className={`${link ? 'nav-items fixed' : 'nav-items'} ${link ? 'nav-items active': 'nav-items'} ${open ? 'nav-items active':'nav-items'}`}>
-            <li>
+            <li data-aos ='fade-down'>
                 <Link activeClass="active" to="home"  onClick={isMobile && linkClose} spy={true} smooth={true} offset={0} duration={1} >
                     HOME
                 </Link>
             </li>
-            <li>
+            <li data-aos ='zoom-in'>
                 <Link activeClass="active" to="about" onClick={isMobile && linkClose} spy={true} smooth={true} offset={-10} duration={1} delay={100}>
                     ABOUT
                 </Link>
             </li>
-            <li>
+            <li data-aos ='fade-left'>
                 <Link activeClass="active" to="portfolio"  onClick={isMobile && linkClose} spy={true} smooth={true} offset={-30} duration={1} delay={100}>
                     PORTFOLIO
                 </Link>
             </li>
-            <li>
+            <li data-aos ='zoom-in'>
                 <Link activeClass="active" to="services"  onClick={isMobile && linkClose} spy={true} smooth={true} offset={-30} duration={1} delay={100}>
                     SERVICES
                 </Link>
             </li>
-            <li>
+            <li data-aos ='fade-left'>
                 <Link activeClass="active" to="team"  onClick={isMobile && linkClose} spy={true} smooth={true} offset={0} duration={1} delay={100}>
                     TEAM
                 </Link>
             </li>
-            <li>
+            <li data-aos ='zoom-in'>
                 <Link activeClass="active" to="blog"  onClick={isMobile && linkClose} spy={true} smooth={true} offset={-40} duration={1} delay={100}>
                     BLOG
                 </Link>
             </li>
-            <li>
+            <li data-aos ='fade-up'>
                 <Link activeClass="active" to="contact" onClick={isMobile && linkClose}  spy={true} smooth={true} offset={30} duration={1} delay={100}>
                     CONTACT
                 </Link>

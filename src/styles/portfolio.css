@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   place-items: center;
-  gap: 1rem;
+  gap: .1rem;
 }
 
 .main-heading {
@@ -53,9 +53,10 @@
   font-style: italic;
 }
 
-.purple-line {
+hr.purple-line {
   width: 5rem;
-  border: 1px solid var(---main_color)
+  border-top: 1px solid var(---main_color)
+  
 }
 
 .portfolio-wrapper {
@@ -185,7 +186,7 @@
     height: 100rem;
 
     padding: 4rem 0rem;
-    margin-top:8rem;
+    margin-top:2rem;
     gap:7rem;
     }
   }

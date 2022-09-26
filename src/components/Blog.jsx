@@ -56,7 +56,10 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <button className='blog-button'>READ OUR BLOG</button>
+            <div className='blog-button'>
+            <button>READ OUR BLOG</button>
+            </div>
+            
         </div>
     )
 }
