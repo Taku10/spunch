@@ -91,3 +91,11 @@
 .down-arrow:hover{
     color:var(---main_color);
 }
+
+
+@media (max-width:992px) {
+    
+    .home-header{
+        width: 100%;
+    }
+}

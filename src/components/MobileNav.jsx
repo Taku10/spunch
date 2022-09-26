@@ -1,5 +1,5 @@
 import React, { useState, createContext } from 'react'
-import NavLinks from './NavLinks'
+import {MobileNavLinks} from './NavLinks'
 import '../styles/nav.css'
 import { CgMenu } from 'react-icons/cg'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -19,7 +19,7 @@ const MobileNav = () => {
   return (
     <CloseContext.Provider value={open}>
       <nav className='mobile-nav'>
-        {open && <NavLinks />}
+        {open && <MobileNavLinks isMobile={true} linkClose={linkClose}/>}
         <div className={open ? 'hamburger-wrapper active' : 'hamburger-wrapper'}>
           {!open ? hamburger: closeBurger}
         </div>
