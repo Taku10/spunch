@@ -58,3 +58,13 @@
 .dev-name{
     color: var(---main_color);
 }
+
+@media (max-width:500px) {
+    .footer-socials li{
+        font-size:12px;
+    }
+
+    .footer-container p{
+        font-size: 12px;
+    }
+}

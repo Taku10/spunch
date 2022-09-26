@@ -7,7 +7,7 @@ const Team = () => {
             <div className="team-header">
                 <h1 className='main-heading-team'>Awesome Team</h1>
                 <p className='sub-heading'>Setibulum rutrum quam vitae fringilla tincidunt</p>
-                <hr className='purple-line' />
+                <hr className='purple-line-hr' />
             </div>
             <div className='team-wrapper'>
                 <div className='member-parent'>

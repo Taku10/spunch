@@ -136,12 +136,16 @@
     background-color: transparent;
     transition: 1s ease;
     cursor: pointer;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
 }
 
 .blog-button button:hover{
     background-color: var(---main_color);
     color: white;
     transform: scale(1.1);
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
 }
 
 @media (max-width:768px) {
@@ -177,7 +181,6 @@
     }
 
     .news{
-        border: 1px solid;
         height: 30%;
     }
 }

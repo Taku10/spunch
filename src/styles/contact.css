@@ -81,13 +81,11 @@
     font-family: var(---main_font);
     font-weight: var(---four);
     color: var(---header_color);
-    border-color:#c9c7c7
+    border-color:#c9c7c7;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
 }
 
 
-.contact-form input:focus{
-    outline-color: var(---main_color);
-}
 
 .contact-form textarea:focus{
     outline-color: var(---main_color);
@@ -95,7 +93,10 @@
 
 .contact-form textarea{
     padding: .5rem 1rem;
-    border-color:#c9c7c7
+    border-color:#c9c7c7;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
 
 }
 
@@ -114,11 +115,23 @@
     background-color: var(---main_color);
     border-radius: .5rem;
     border: none;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+   
 }
 
 .contact-form button:hover{
     background-color: var(---header_color);
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
 }
+
+input[type=text]:hover{
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+  }
+  input[type=text]:focus {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+  }
 
 
 @media (max-width:768px) {

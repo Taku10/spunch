@@ -55,7 +55,7 @@
     text-align: center;
 }
 
- hr {
+ .purple-line-hr{
     width: 5rem;
     border: 1px solid var(---main_color) ;
 }
@@ -119,4 +119,10 @@
     }
 
     
+}
+
+@media (max-width:500px) {
+    .sub-heading{
+        font-size:12px;
+    }
 }

@@ -80,16 +80,18 @@
 }
 
 .down-arrow{
-    z-index: 2;
+    z-index: 0;
     color:white;
-    top:0;
     font-size: 1.8rem;
-    margin-bottom:2rem;
+    bottom:2%;
     cursor: pointer;
+    position: absolute;
+    transition: .7s ease;
 }
 
 .down-arrow:hover{
     color:var(---main_color);
+    bottom:5%;
 }
 
 
